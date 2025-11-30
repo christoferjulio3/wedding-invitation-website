@@ -24,6 +24,10 @@ p, span, div {
     font-family: 'Quicksand', sans-serif;
 }
 
+footer h2 {
+    font-family: "Quicksand", serif !important;
+}
+
 
 /* universal css */
 

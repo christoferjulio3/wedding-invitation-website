@@ -1,8 +1,8 @@
-/* <===================TYPOGRAPHY & FONTS===================> */
+/* fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Quicksand&display=swap');
 
-/* <===================CSS VARIABLES===================> */
+/* css variables */
 
 :root{
     --h1-size: 7rem;
@@ -24,7 +24,7 @@ p, span, div {
 }
 
 
-/* <===================UNIVERSAL CSS===================> */
+/* universal css */
 
 *{
     box-sizing: border-box;
@@ -91,7 +91,7 @@ h3{
     position: relative;
     top: 0vh;
 }
-/* <===================NAVBAR===================> */
+/* navbar */
 
 nav{
     height: 3vh;
@@ -99,17 +99,17 @@ nav{
     margin-bottom: 20vh;
 }
 .logo-img {
-    height: 80px;      /* similar height to text logo */
-    width: auto;       /* keeps proportions */
+    height: 80px;      
+    width: auto;      
     object-fit: contain;
     vertical-align: middle;
-    margin-top: 12px;  /* optional fine-tuning */
+    margin-top: 12px; 
     margin-left: 20px
 }
 
 @media screen and (max-width: 767px) {
     .logo-img {
-        height: 60px;  /* smaller for phone */
+        height: 60px;  
     }
 }
 
@@ -189,7 +189,7 @@ a:hover{
     }
 }
 
-/* <===================HOME===================> */
+/* first page, home */
 
 .container-out{
     margin-top: 10vh;
@@ -297,7 +297,7 @@ a:hover{
 
 
 
-/* <===================Venue===================> */
+/* venue */
 
 .timeline{
     display: block;
@@ -381,26 +381,7 @@ a:hover{
 }
 
 
-
-/* <===================STORY===================> */
-
-/* #story{
-    padding-top: 10vh;
-    display: flex;
-    flex-direction: row;
-    margin: 10vh 0;
-}
-#story h3{
-    width: 40vw;
-}
-#story p{
-    width: 40vw;
-    text-align: justify;
-    font-size: var(--h3-size);
-    line-height: var(--h3-size);
-}
- */
-
+/* story section */
 
 
 #story {
@@ -428,58 +409,6 @@ a:hover{
     line-height: var(--h3-size);
 }
 
-/* 
-.story-gallery {
-    grid-area: gallery;
-    width: 100%;
-    margin-top: 20px;
-}
-
-
-
-.gallery-wrapper {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 0px;
-}
-
-.gallery-track {
-    display: flex;
-    transition: transform 0.3s ease;
-}
-
-.gallery-item {
-    width: 100%;
-    flex-shrink: 0;
-
-    height: 60vh;   
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-
-.gallery-btn {
-    position: absolute;
-    bottom: 10px;
-    background: rgba(255,255,255,0.75);
-    border: none;
-    padding: 10px 14px;
-    cursor: pointer;
-    font-size: 20px;
-    border-radius: 50%;
-}
-
-.gallery-controls {
-    position: absolute;
-    width: 100%;
-    bottom: 10px;
-    text-align: center;
-}
-
-.gallery-controls button {
-    margin: 0 10px; 
-}
 
 
 /* GALLERY CONTAINER */
@@ -518,13 +447,13 @@ a:hover{
 }
 
 .gallery-btn {
-    background: #1b1b1b;    /* dark box like your example */
+    background: #1b1b1b;   
     color: white;
     border: none;
     padding: 10px 18px;
     font-size: 22px;
     cursor: pointer;
-    border-radius: 4px;     /* square-ish */
+    border-radius: 4px;  
 }
 
 .gallery-btn:hover {
@@ -532,7 +461,7 @@ a:hover{
 }
 
 
-/* --- MOBILE FIX --- */
+/* mobile settings */
 @media (max-width: 1000px) {
     .gallery-item {
         height: 60vw;
@@ -572,7 +501,7 @@ a:hover{
     }
 
     .gallery-item {
-        height: 70vw;   /* mobile-friendly ratio */
+        height: 70vw;   
     }
 }
 
@@ -599,7 +528,7 @@ a:hover{
     }
 }
 
-/* <===================GALLERY===================> */
+/* small gallery */
 
 .gallery{
     display: flex;
@@ -641,7 +570,7 @@ a:hover{
     }
 }
 
-/* <===================QUOTE===================> */
+/* quote */
 .quote{
     margin: 10vh 0;
 }
@@ -667,17 +596,8 @@ a:hover{
 }
 
 
-/* <===================HANDS===================> */
+/* background img 2 */
 
-/* .hands{
-    height: 120vh;
-    width: 100%;
-    background-image: url("img/background3.jpg");
-    background-size: cover;
-    background-position-y: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-} */
 
 .hands {
     height: 120vh;
@@ -688,20 +608,8 @@ a:hover{
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
-/* 
-@media (max-width: 1000px) {
 
-    .hands {
-        height: 120vh;                   
-        background-attachment: scroll;  
-        background-size: contain;        
-        background-position: top center; 
-        background-repeat: no-repeat;
-    }
-} */
-
-
-    /* <===================RSVP===================> */
+/* rsvp section */
 /* 2-column version */
 .two-column {
     display: flex;
@@ -757,11 +665,11 @@ a:hover{
     margin-top: 25px;
 }
 
-/* Fixed-size RSVP buttons */
+/* rsvp button settings */
 .rsvp-buttons .action-btn {
-    width: 140px;        /* ← choose the exact size you want */
-    text-align: center;  /* ensures the text stays centered */
-    padding: 12px 0;     /* keep vertical spacing consistent */
+    width: 140px;        
+    text-align: center;  
+    padding: 12px 0;    
 }
 
 .rsvp-form-container {
@@ -772,7 +680,7 @@ a:hover{
 
 .rsvp-form-container iframe {
     width: 100%;
-    height: 1000px;     /* taller so the full form fits */
+    height: 1000px;  
     border-radius: 12px;
     background: white;
 }
@@ -782,7 +690,7 @@ a:hover{
     color: white;
 }
 
-/* MOBILE FIX */
+/* mobile */
 @media (max-width: 1000px) {
     .two-column {
         flex-direction: column;
@@ -794,14 +702,13 @@ a:hover{
     }
 }
 
-/* MOBILE FORM HEIGHT FIX */
+/* mobile form */
 @media (max-width: 600px) {
     .rsvp-form-container iframe {
-        height: 700px;   /* shorter form on mobile */
+        height: 700px;  
     }
 }
-
-/* ==================== MODAL ==================== */
+/* gift section */
 .gift-modal {
     display: none; 
     position: fixed;
@@ -852,21 +759,16 @@ a:hover{
 .gift-info strong {
     font-size: 1.8rem;
     font-weight: 700;
-    color: #5a4230; /* optional warm brown */
+    color: #5a4230; 
 }
-/* 
-.gift-info {
-    font-size: 1.2rem;      
-    line-height: 1.8rem;
-    margin-top: 1rem;
-} */
+
 
 
 .copy-btn {
     display: inline-block;
     margin: 8px 0 18px 0;
-    padding: 10px 20px;      /* bigger click area */
-    font-size: 1.2rem;       /* bigger text */
+    padding: 10px 20px;   
+    font-size: 1.2rem;      
     border: 2px solid #000;
     border-radius: 10px;
     background: #fff;
@@ -880,8 +782,8 @@ a:hover{
 }
 
 
-/* <===================REGISTRY===================> */
-/* ===== PREWEDDING VIDEO SECTION ===== */
+
+/* prewedding vid */
 .prewedding-section {
     padding: 8vh var(--horizontal-margin-spacing);
     text-align: center;
@@ -915,7 +817,7 @@ a:hover{
 
 
 
-/* <===================Autogallery===================> */
+/* autogallery */
 
 /* Auto slideshow gallery */
 .auto-gallery {
@@ -946,7 +848,7 @@ a:hover{
 
 
 
-/* <===================PARTING MESSAGE===================> */
+/* message */
 .parting-message h1{
     margin-top: 10vh;
     text-align: center;
@@ -955,7 +857,7 @@ a:hover{
     margin:  10vh auto;
 }
 
-/* <===================FOOTER===================> */
+/* footer */
 
 footer{
     margin-top: 20vh;
@@ -980,7 +882,7 @@ footer h2{
 }
 
 
-/* <===================addition===================> */
+/* add */
 .container-out {
     display: flex;
     align-items: center;   /* optional */

@@ -116,15 +116,11 @@
 </div>
 
 <script>
-    // --------------------------------------------------
-    // 1. Read ?guest= from URL
-    // --------------------------------------------------
+// to read guest
     const urlParams = new URLSearchParams(window.location.search);
     const guestID = urlParams.get("guest");
     
-    // --------------------------------------------------
-    // 2. Load guest.json for name
-    // --------------------------------------------------
+// to load guest name
     fetch("./data/guest.json")
       .then(response => response.json())
       .then(data => {
@@ -140,9 +136,7 @@
       });
     
     
-    // --------------------------------------------------
-    // 3. ASSETS TO PRELOAD  (★ ADD THIS PART ★)
-    // --------------------------------------------------
+// pre-loading images
     const assetsToPreload = [
         "img/background.jpg",
         "img/background2.webp",
@@ -151,7 +145,6 @@
         'img/gallery2.jpg',
         'img/gallery3.jpg',
         'music/Queen - The Millionaire Waltz (Official Lyric Video).mp3',
-        // Add more images...
     ];
     
     function preloadAssets(assets) {
@@ -172,9 +165,7 @@
     }
     
     
-    // --------------------------------------------------
-    // 4. OPEN INVITATION (uses preload before redirect)
-    // --------------------------------------------------
+// open invitation
     function openInvitation() {
         sessionStorage.setItem("playMusic", "yes");
 
@@ -192,10 +183,6 @@
         // Show loading text (stay visible until fully loaded)
         loadingText.style.display = "block";
 
-        // DO NOT fade content away
-        // content.classList.add("fade-out");
-
-        // Preload ALL assets BEFORE redirect
         preloadAssets(assetsToPreload).then(() => {
             if (!guestID)
                 window.location.href = "index.html";

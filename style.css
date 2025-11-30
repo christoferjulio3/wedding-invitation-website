@@ -1,6 +1,7 @@
 /* fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Cutive+Mono&family=Kapakana:wght@300..400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 /* css variables */
 
@@ -189,6 +190,13 @@ a:hover{
     }
 }
 
+
+/* opening page */
+
+
+/* #content-box{
+    font-family: 'Bodoni Moda', serif;
+} */
 /* first page, home */
 
 .container-out{
@@ -197,6 +205,11 @@ a:hover{
     flex-direction: row;
     justify-content: space-between;
 }
+/* .container-out .text {
+    font-family: "Cormorant-Garamond", serif !important;
+    font-size: 18 px;
+} */
+
 .home-img{
     /* background-image: url(https://firebasestorage.googleapis.com/v0/b/chuck-842bb.appspot.com/o/GurAmanWed%2Fpic1.jpg?alt=media&token=5dbf5af2-354b-464c-9db2-7da57b484eda); */
     background-image: url("img/background.jpg");
@@ -266,7 +279,7 @@ a:hover{
 
 /* NAME */
 .meet-name {
-    font-size: 1.4rem;
+    font-size: 2rem;
     margin: 10px 0 6px 0; /* small clean spacing */
 }
 
@@ -282,7 +295,7 @@ a:hover{
     /* font-family: 'Quicksand', sans-serif; */
     text-align: left;
     width: 100%;
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 1.4;
 }
 
@@ -850,6 +863,7 @@ a:hover{
 
 /* message */
 .parting-message h1{
+    font-family: 'Bodoni Moda';
     margin-top: 10vh;
     text-align: center;
 }

@@ -6,6 +6,19 @@
 <title>Opening</title>
 
 <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Kapakana:wght@300..400&display=swap');
+
+
+    #content-box{
+        font-family: "Bodoni Moda", serif !important;
+    }
+
+    #guest-name{
+        font-family: 'Kapakana', serif;
+        font-size: clamp(32px, 5vw, 36px) !important;
+    }
     /* Fullscreen clean layout */
     body, html {
         margin: 0;
@@ -13,7 +26,7 @@
         height: 100%;
         width: 100%;
         overflow: hidden;
-        font-family: Arial, sans-serif;
+        /* font-family: Arial, sans-serif; */
     }
 
     /* Fullscreen video background */
@@ -96,7 +109,7 @@
 <div class="overlay"></div>
 
 <!-- Content -->
-<div id="content-box" class="content-container">
+<div id="content-box" class="content-container" >
 
     <div class="title">
         The Wedding of <br>
@@ -104,7 +117,7 @@
     </div>
 
     <div id="guest-name" class="guest-name">
-        Dear Guest:<br>Loading...
+        Dear Guest :<br>Loading...
     </div>
 
     <button id="open-btn" class="open-btn" onclick="openInvitation()">Open Invitation</button>
@@ -127,12 +140,12 @@
         const guestNameBox = document.getElementById("guest-name");
     
         if (!guestID || !data[guestID]) {
-            guestNameBox.innerHTML = "Dear Guest:<br>Mr./Ms. Simple";
+            guestNameBox.innerHTML = "Dear Guest :<br>Mr./Ms. Simple";
             return;
         }
     
         const guestName = data[guestID].guest_name;
-        guestNameBox.innerHTML = `Dear Guest:<br>${guestName}`;
+        guestNameBox.innerHTML = `Dear Guest :<br>${guestName}`;
       });
     
     

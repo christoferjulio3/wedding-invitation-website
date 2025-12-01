@@ -482,5 +482,13 @@
     "g121": {
         "guest_name": "Aditya Mamonto",
         "num_pax": 2
+    },
+    "g122": {
+        "guest_name": "Raymond Angelo Tantohadi",
+        "num_pax": 2
+    },
+    "g123": {
+        "guest_name": "Clifford Erikson Kwandang",
+        "num_pax":2
     }
 }
